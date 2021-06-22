@@ -9,6 +9,6 @@
 - [ ] [Execute some Programs](https://www.executeprogram.com/)
 
 # Other Things
-- [] Get back on Twitter
-- [] Implement ES6 array methods with a 'for' loop
+- [ ] Get back on Twitter
+- [ ] Implement ES6 array methods with a 'for' loop
 - [x] Learn about Jackson Gabbard
