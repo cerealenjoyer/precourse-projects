@@ -1,5 +1,5 @@
 # To Do list Week 1
-- [ x ] Install terminal
+[x] Install terminal
 - [x] Complete the [Command Line Primer](https://www.digitalocean.com/community/tutorials/a-linux-command-line-primer)
 - [x] Complete [Semantic HTML workshop](https://learn.foundersandcoders.com/workshops/semantic-html/)
 - [ ] [Learn Accessibility](https://learn.foundersandcoders.com/workshops/learn-a11y/) 
