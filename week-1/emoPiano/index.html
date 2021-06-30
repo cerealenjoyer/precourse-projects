@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emo Piano</title>
+  <link rel="stylesheet" href="style.css">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');</style>
+</head>
+<body>
+
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <span class="sound">A</span>
+      <kbd>A</kbd>
+    </div>
+   
+    <div data-key="83" class="key">
+      <span class="sound">B</span>
+      <kbd>S</kbd>
+    </div>
+    <div data-key="68" class="key">
+      <span class="sound">C</span>
+      <kbd>D</kbd>
+    </div>
+    <div data-key="70" class="key">
+      <span class="sound">D</span>
+      <kbd>F</kbd>
+    </div>
+    <div data-key="74" class="key">
+      <span class="sound">E</span>
+      <kbd>J</kbd>
+    </div>
+    <div data-key="75" class="key">
+      <span class="sound">F#</span>
+      <kbd>K</kbd>
+    </div>
+    <div data-key="76" class="key">
+      <span class="sound">G</span>
+       <kbd>L</kbd>
+    </div>
+    <div data-key="59" class="key">
+      <span class="sound">B2</span>
+      <kbd>;</kbd>
+    </div>
+  </div>
+
+  <audio data-key="65" src="sounds/piano1A.wav"></audio>
+  <audio data-key="83" src="sounds/piano1B.wav"></audio>
+  <audio data-key="68" src="sounds/piano1C.wav"></audio>
+  <audio data-key="70" src="sounds/piano1D.wav"></audio>
+  <audio data-key="74" src="sounds/piano1E.wav"></audio>
+  <audio data-key="75" src="sounds/piano1Fsh.wav"></audio>
+  <audio data-key="76" src="sounds/piano1G.wav"></audio>
+  <audio data-key="59" src="sounds/piano2B.wav"></audio>
+
+
+<script>
+
+ function removeTransition(e){
+   if (e.propertyName !== 'transform') return;
+   e.target.classList.remove('playing');
+ }
+
+ function playSound(e) {
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    if (!audio) return;
+
+    key.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
+
+    if (password.indexOf(event.key) < 0 || event.key !== password[current]) {
+  current = 0;}
+  else current ++;
+  if (password.length === current) {
+		current = 0;
+    window.alert('Go outside')
+}}
+
+ const password = 'lk;jfldsjaf'.split('');
+ let current = 0;
+
+
+ const keys = document.querySelectorAll('.key');
+ keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+ window.addEventListener('keydown', playSound);
+
+
+</script>
+
+
+</body>
+</html>

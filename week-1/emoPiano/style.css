@@ -1,0 +1,76 @@
+html {
+  font-size: 10px;
+  font-family: 'Cinzel', serif;
+}
+body{
+  background: url('./background.jpg') bottom center;
+  background-size: cover;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.25);
+}
+body,html {
+  margin: 0;
+  padding: 0;
+
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  /* min-height: 100vh; */
+  margin: 80px;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  border: .2rem solid black;
+  border-radius: .1rem;
+  margin: .5rem;
+  font-size: 1.5rem;
+  padding: 1rem .15rem;
+  transition: all .07s ease;
+  width: 8rem;
+  height: 24rem;
+  text-align: center;
+  justify-content: space-around;
+  color: black;
+  background: white;
+  text-shadow: 0 0 .2rem black;
+}
+.key:nth-of-type(6){
+  align-self: flex-start;
+  color: white;
+  background: black;
+  text-shadow: 0 0 .5rem white;
+}
+
+.playing {
+  transform: scale(0.8);
+  border-color: black;
+  box-shadow: 0 0 1rem black;
+}
+
+kbd {
+  display: block;
+  font-size: 2rem;
+  font-family: 'Cinzel', serif;
+}
+
+.sound {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ad0303;
+}
