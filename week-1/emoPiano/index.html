@@ -14,7 +14,10 @@
       <span class="sound">A</span>
       <kbd>A</kbd>
     </div>
-   
+    <div data-key="87" class="key black">
+      <span class="sound">B<sup>♭</sup></span>
+      <kbd>W</kbd>
+    </div>
     <div data-key="83" class="key">
       <span class="sound">B</span>
       <kbd>S</kbd>
@@ -23,35 +26,66 @@
       <span class="sound">C</span>
       <kbd>D</kbd>
     </div>
+    <div data-key="82" class="black key">
+      <span class="sound">C<sup>#</sup></span>
+      <kbd>R</kbd>
+    </div>
     <div data-key="70" class="key">
       <span class="sound">D</span>
       <kbd>F</kbd>
     </div>
-    <div data-key="74" class="key">
+    <div data-key="84" class="black key">
+      <span class="sound">D<sup>#</sup></span>
+      <kbd>T</kbd>
+    </div>
+    <div data-key="71" class="key">
       <span class="sound">E</span>
+      <kbd>G</kbd>
+    </div>
+    <div data-key="74" class="key">
+      <span class="sound">F</span>
       <kbd>J</kbd>
     </div>
+    <div data-key="73" class="black key">
+      <span class="sound">F<sup>#</sup></span>
+      <kbd>I</kbd>
+    </div>
     <div data-key="75" class="key">
-      <span class="sound">F#</span>
+      <span class="sound">G</span>
       <kbd>K</kbd>
     </div>
+    <div data-key="79" class="key black">
+      <span class="sound">A<sup>♭</sup></span>
+      <kbd>O</kbd>
+      </div>
     <div data-key="76" class="key">
-      <span class="sound">G</span>
+      <span class="sound">A<sup>2</sup></span>
        <kbd>L</kbd>
     </div>
+    <div data-key="80" class="key black">
+      <span class="sound">B<sup>♭</sup></span>
+      <kbd>P</kbd>
+      </div>
     <div data-key="59" class="key">
-      <span class="sound">B2</span>
+      <span class="sound">B<sup>2</sup></span>
       <kbd>;</kbd>
     </div>
   </div>
 
   <audio data-key="65" src="sounds/piano1A.wav"></audio>
+  <audio data-key="87" src="sounds/piano1Ash.wav"></audio>
   <audio data-key="83" src="sounds/piano1B.wav"></audio>
   <audio data-key="68" src="sounds/piano1C.wav"></audio>
+  <audio data-key="82" src="sounds/piano1Csh.wav"></audio>
   <audio data-key="70" src="sounds/piano1D.wav"></audio>
-  <audio data-key="74" src="sounds/piano1E.wav"></audio>
-  <audio data-key="75" src="sounds/piano1Fsh.wav"></audio>
-  <audio data-key="76" src="sounds/piano1G.wav"></audio>
+  <audio data-key="84" src="sounds/piano1Dsh.wav"></audio>
+  <audio data-key="71" src="sounds/piano1E.wav"></audio>
+  <audio data-key="74" src="sounds/piano1F.wav"></audio>
+  <audio data-key="73" src="sounds/piano1Fsh.wav"></audio>
+  <audio data-key="75" src="sounds/piano1G.wav"></audio>
+  <audio data-key="79" src="sounds/piano1Gsh.wav"></audio>
+  <audio data-key="76" src="sounds/piano2A.wav"></audio>
+  <audio data-key="80" src="sounds/piano2Ash.wav"></audio>
   <audio data-key="59" src="sounds/piano2B.wav"></audio>
 
 
@@ -76,10 +110,10 @@
   else current ++;
   if (password.length === current) {
 		current = 0;
-    window.alert('A door has unlocked')
+    window.alert('Go outside')
 }}
 
- const password = 'lk;jfldsjaf'.split('');
+ const password = 'ki;gfkdsgaf'.split('');
  let current = 0;
 
 

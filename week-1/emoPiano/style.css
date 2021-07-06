@@ -21,6 +21,9 @@ body,html {
 
 }
 
+sup{
+  font-size: 2rem;
+}
 .keys {
   display: flex;
   flex: 1;
@@ -49,11 +52,15 @@ body,html {
   background: white;
   text-shadow: 0 0 .2rem black;
 }
-.key:nth-of-type(6){
+.black{
   align-self: flex-start;
+  font-size: 1rem;
   color: white;
   background: black;
   text-shadow: 0 0 .5rem white;
+}
+.key:nth-of-type(8){
+  margin-right: 10rem;
 }
 
 .playing {
