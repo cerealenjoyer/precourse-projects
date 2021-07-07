@@ -1,0 +1,51 @@
+header {
+  padding: 1.5rem;
+  background-color: black;
+  color: white;
+  padding-bottom: 0;
+}
+h1{
+  margin-bottom: 0;
+}
+.stack-lg > * + * {
+  margin-top: 2rem;
+}
+
+.controls{
+  font-size: 1.5rem;
+}
+
+:root {
+--opacity1: 100%;
+--blur1: 1px;
+--opacity2: 100%;
+--blur2: 1px;
+}
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+ 
+  }
+  .image0 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+     mix-blend-mode: color-burn;
+    opacity:var(--opacity1);
+    filter:blur(var(--blur1));
+  }
+  .image2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+     mix-blend-mode: multiply;
+     opacity:var(--opacity2);
+     filter:blur(var(--blur2));
+    
+  }

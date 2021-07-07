@@ -66,6 +66,8 @@
       width: 50%;
       height: 6px;
       background: black;
+      border: black solid 1px;
+      border-radius:  2px;
       position: absolute;
       top: 50%;
       transform-origin: 100%;
@@ -111,7 +113,7 @@
         window.alert('Something was unlocked')
       }
     }
-    if (seconds === 1){
+    if (seconds <= 5){
       secondHand.style.transition = 'all 0.5s'
     }
 
