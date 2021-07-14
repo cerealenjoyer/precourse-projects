@@ -20,3 +20,5 @@ l k ; j f l d s j a f
 ### [CSS and Javascript Clock](https://cerealenjoyer.github.io/precourse-projects/week-1/horrorClock/index.html)
 
 I made a simple clock in JS and CSS, and decided to try and link it thematically to the previous project: inspired by my wasted youth playing point-'n-click mystery games I made a *Silent Hill* inspired puzzle clock - watching it until the second hand hits '0' causes it to click and shift, unlocking another door. If possible I'm going to try and link the upcoming projects together into a loose narrative based around puzzle solving, so hopefully I don't come across any serious curveballs
+
+### [Editing CSS Variables with Javascript](https://cerealenjoyer.github.io/precourse-projects/week-3/css-variables/index.html)

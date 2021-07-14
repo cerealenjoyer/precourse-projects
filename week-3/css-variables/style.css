@@ -1,8 +1,26 @@
+:root {
+  --primary-colour: #BB8760;
+  --secondary-colour: #FFDADA;
+  --font-colour: #FFF1F1;
+  --bg-colour: #4F0E0E;
+  --opacity1: 100%;
+  --blur1: 1px;
+  --opacity2: 100%;
+  --blur2: 1px;
+}
+
+main{
+  background-color: var(--bg-colour);
+  color: var(--font-colour);
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+
 header {
   padding: 1.5rem;
-  background-color: black;
-  color: white;
+  background-color: var(--primary-colour);
+  color: var(--secondary-colour);
   padding-bottom: 0;
+  font-size: 2rem;
 }
 h1{
   margin-bottom: 0;
@@ -13,14 +31,17 @@ h1{
 
 .controls{
   font-size: 1.5rem;
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+  margin-left: 1em;
+  margin-right: 20em;
 }
 
-:root {
---opacity1: 100%;
---blur1: 1px;
---opacity2: 100%;
---blur2: 1px;
+.overlay{
+
 }
+
+
 .parent {
     position: relative;
     top: 0;

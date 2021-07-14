@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulating CSS Variables with JS</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Martel+Sans:wght@600&display=swap" rel="stylesheet">
     <script src="script.js"defer></script>
 
 </head>
@@ -14,17 +17,24 @@
     <header> <h1>'Fun' with CSS Variables </h1></header>
     
     <div class="controls">
-        <label for="opacity1">Filter 1:</label>
-        <input id="opacity1" type="range" name="opacity1" min="0" max="100" value="0" data-unit="%">
+        <div class="overlay">
+          <label for="opacity1">Filter 1:</label>
+          <input id="opacity1" type="range" name="opacity1" min="0" max="100" value="0" data-unit="%">
+        </div>
     
-        <label for="blur1">Filter 1 Blur:</label>
-        <input id="blur1" type="range" name="blur1" min="0" max="25" value="1" data-unit="px">
+        <div class="modifier">
+          <label for="blur1">Filter 1 Blur:</label>
+          <input id="blur1" type="range" name="blur1" min="0" max="25" value="1" data-unit="px">
+        </div>
 
-        <label for="opacity2">Filter 2:</label>
-        <input id="opacity2" type="range" name="opacity2" min="0" max="100" value="0" data-unit="%">
-    
-        <label for="blur2">Filter 1 Blur:</label>
-        <input id="blur2" type="range" name="blur2" min="0" max="25" value="1" data-unit="px">
+        <div class="overlay">
+          <label for="opacity2">Filter 2:</label>
+          <input id="opacity2" type="range" name="opacity2" min="0" max="100" value="0" data-unit="%">
+        </div>
+        <div class="modifier">
+          <label for="blur2">Filter 2 Blur:</label>
+          <input id="blur2" type="range" name="blur2" min="0" max="25" value="1" data-unit="px">
+        </div>
     
     
       </div>
