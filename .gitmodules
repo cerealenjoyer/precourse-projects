@@ -1,0 +1,11 @@
+[submodule "DaSha"]
+path = week-5/DaSha-Agency
+url = https://github.com/fac22/DaSha-Agency.git
+
+[submodule "DaSha1"]
+path = week-5/DaSha
+url = https://github.com/fac22/DaSha-Agency.git
+
+[submodule "filmfun"]
+path = week-7/filmfun
+url = https://github.com/fac22/SashaSariaFilmLookup.git
