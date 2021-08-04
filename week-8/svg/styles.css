@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Pocket Monk";
+  src: url("font/Pocket Monk.otf") format("otf"),
+    url("font/Pocket Monk.woff") format("woff");
+  font-weight: normal;
+}
+body {
+  background-color: #333;
+  font-family: "Pocket Monk";
+  font-size: 70px;
+}
+
+path {
+  fill: black;
+}
+
+text {
+  fill: #ffcb05;
+  text-anchor: middle;
+  text-shadow: -1px -1px 0 #2a75bb, 1px -1px 0 #2a75bb, -1px 1px 0 #2a75bb,
+    1px 1px 0 #2a75bb;
+}

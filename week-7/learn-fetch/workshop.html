@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Fetch & Promises</title>
+  </head>
+  <body>
+    <h1>Open the console</h1>
+    <script>
+      const getUser = (username) =>
+        fetch(`https://api.github.com/users/${username}`).then((response) =>
+          response.json()
+        );
+      const userFetch = (user) =>
+        fetch(user.repos_url).then((response) => response.json());
+
+      const sash = getUser("cerealenjoyer");
+      const oli = getUser("oliverjam");
+      Promise.all([sash, oli]).then(console.log);
+    </script>
+  </body>
+</html>
