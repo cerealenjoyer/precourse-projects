@@ -16,7 +16,7 @@ h2 {
   margin: 0;
 }
 output {
-  background-image: url("/assets/path.svg");
+  background-image: url(https://raw.githubusercontent.com/cerealenjoyer/precourse-projects/f073343f231f6c435f39a06cf23bf5e19ad5da0b/week-8/real-world-fetch/assets/path.svg);
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
