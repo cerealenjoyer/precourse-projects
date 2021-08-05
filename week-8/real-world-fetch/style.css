@@ -5,7 +5,7 @@
   font-weight: normal;
 }
 body {
-  background-color: brown;
+  background-color: red;
   font-family: "Pocket Monk";
   text-shadow: -1px -1px 0 #2a75bb, 1px -1px 0 #2a75bb, -1px 1px 0 #2a75bb,
     1px 1px 0 #2a75bb;
@@ -16,7 +16,7 @@ h2 {
   margin: 0;
 }
 output {
-  background-image: url("https://github.com/cerealenjoyer/precourse-projects/blob/main/week-8/real-world-fetch/assets/path.svg");
+  background-image: url("/assets/path.svg");
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
