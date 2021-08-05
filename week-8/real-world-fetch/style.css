@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Pocket Monk";
+  src: url("assets/Pocket Monk.otf") format("otf"),
+    url("assets/Pocket Monk.woff") format("woff");
+  font-weight: normal;
+}
+body {
+  background-color: red;
+  font-family: "Pocket Monk";
+  text-shadow: -1px -1px 0 #2a75bb, 1px -1px 0 #2a75bb, -1px 1px 0 #2a75bb,
+    1px 1px 0 #2a75bb;
+  color: #ffcb05;
+  font-size: 30px;
+}
+h2 {
+  margin: 0;
+}
+output {
+  background-image: url(/assets/path.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 400px;
+  min-height: 350px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width: 300px;
+}
+
+text {
+  fill: #ffcb05;
+  text-anchor: middle;
+
+  font-size: 70px;
+}
+form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  text-align: center;
+}
+
+svg {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
