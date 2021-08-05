@@ -16,7 +16,7 @@ h2 {
   margin: 0;
 }
 output {
-  background-image: url(/assets/path.svg);
+  background-image: url("assets/path.svg");
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
