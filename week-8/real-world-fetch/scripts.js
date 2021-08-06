@@ -22,13 +22,12 @@ form.addEventListener("submit", (event) => {
       console.log(pokemon);
       const pokeName = document.createElement("h2");
 
-      const checkName = mimeCheck(name);
+      const checkName = mimeCheck(pokemon.name);
       pokeName.innerText =
         checkName.charAt(0).toUpperCase() + checkName.slice(1) + "!";
 
       output.append(pokeName);
       const pokeImage = document.createElement("img");
-      console.log(pokemon.sprites.other);
       pokeImage.src = Object.values(
         pokemon.sprites.other["official-artwork"]
       )[0];
@@ -37,8 +36,7 @@ form.addEventListener("submit", (event) => {
     })
     .catch((error) => {
       if (error.message === "404") {
-        output.textContent =
-          "That's not a pokemon! Did you spell " + name + " right?";
+        output.textContent = "That's not a pokemon! Try the number?";
       } else output.textContent = "something else went wrong idk";
     });
 });
